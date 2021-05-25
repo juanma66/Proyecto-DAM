@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".DatosProducto">
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"
+        android:dividerHeight="4dp"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="52dp" >
+    </ListView>
+
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Titulo"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/verdeClaro"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/volverInicio"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_volver" />
+
+    <TextView
+        android:id="@+id/correoUsuario"
+        android:layout_width="65dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="@color/verdeClaro"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mainLoginBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+    <ImageView
+        android:id="@+id/idComi"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/mainLoginBtn"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/actualizaBoton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/gris"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/verdeOsculo"
+        app:layout_constraintBottom_toBottomOf="@+id/listview1"
+        app:layout_constraintEnd_toEndOf="@+id/listview1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

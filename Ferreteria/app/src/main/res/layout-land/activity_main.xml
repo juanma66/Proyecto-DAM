@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verdeClaro"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.1"
+        app:srcCompat="@drawable/pantalla_inicio"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_outlined"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="272dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="108dp"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/idEmail"
+            android:layout_width="253dp"
+            android:layout_height="70dp"
+            android:inputType="textEmailAddress"
+            android:singleLine="false"
+            tools:layout_editor_absoluteX="156dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_outlined2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="272dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="36dp"
+        android:hint="Contraseña"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_outlined"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/idPassword"
+            android:layout_width="253dp"
+            android:layout_height="70dp"
+            android:inputType="numberPassword"
+            tools:layout_editor_absoluteX="21dp"
+            tools:layout_editor_absoluteY="147dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/idGuarda"
+        android:layout_width="149dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="128dp"
+        android:background="@drawable/boton_pulsar"
+        android:text="Registro"
+        android:textColor="@drawable/boton_texto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idAcceso" />
+
+    <Button
+        android:id="@+id/idAcceso"
+        android:layout_width="149dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="128dp"
+        android:background="@drawable/boton_pulsar"
+        android:text="Acceder"
+        android:textColor="@drawable/boton_texto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        style="@style/Titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

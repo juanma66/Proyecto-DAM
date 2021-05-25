@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1021369318835",
+    "project_id": "ferreteria-santos",
+    "storage_bucket": "ferreteria-santos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021369318835:android:76b276ef837abc300fdfc6",
+        "android_client_info": {
+          "package_name": "com.example.ferreteria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021369318835-g2t4utfdijckp3oo5an4c9jb303d7883.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs4BV7YzhylzaJt243kWTc1aNz05lCwu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021369318835-g2t4utfdijckp3oo5an4c9jb303d7883.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1021369318835-am1q2q0u6k2r31pbjrvd54vs5lanbog8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ferreteria"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
